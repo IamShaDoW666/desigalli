@@ -31,7 +31,7 @@ const MenuCRUD = () => {
         }
     };
     const deleteUser = async (id) => {
-        let u = "http://localhost:8000/api/deletemenu/" + id
+        let u = "http://164.92.165.54/api/deletemenu/" + id
 
         await axios.delete(u)
         window.location.reload();
@@ -63,7 +63,7 @@ const MenuCRUD = () => {
                                 <tr>
                                     <th scope="row">{note.id}</th>
                                     <td class="w-25">
-                                        <img src={"http://localhost:8000/api" + note.dishImage} class="img-fluid img-thumbnail" alt="Sheep" />
+                                        <img src={"http://164.92.165.54/api" + note.dishImage} class="img-fluid img-thumbnail" alt="Sheep" />
                                     </td>
                                     <td>{note.dishname}</td>
                                     <td>{note.price}</td>

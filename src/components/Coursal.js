@@ -88,7 +88,7 @@ const Coursal = () => {
                             <img
                               class="img-responsive rotate linear infinite"
                               // src={"./images/bhel.png"}
-                              src={"http://localhost:8000/api" + image.img}
+                              src={"http://164.92.165.54/api" + image.img}
                               alt="#"
                             />
                           </div>

@@ -58,7 +58,7 @@ const Blogss = () => {
                             <div class="blog_box row">
                                     <div class="blog_img_box col-md-5">
                                         <figure>
-                                            <img src={"http://localhost:8000/api" + blog.img} alt="#" />
+                                            <img src={"http://164.92.165.54/api" + blog.img} alt="#" />
                                            
                                         </figure>
                                     

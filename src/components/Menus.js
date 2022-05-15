@@ -67,7 +67,7 @@ const Menus = () => {
                     <div class="fh5co-item">
                         <div class="imgborder">
                       
-                            <img src={"http://localhost:8000/api" + menu.dishImage} class="img-responsive" alt="menu" />
+                            <img src={"http://164.92.165.54/api" + menu.dishImage} class="img-responsive" alt="menu" />
                         </div>
                   <h3>{menu.dishname}</h3>
                   <span class="fh5co-price">{menu.price}<sup>.50</sup></span>

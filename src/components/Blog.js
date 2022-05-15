@@ -58,7 +58,7 @@ const Blog = () => {
               <div class="blog_box">
                 <div class="blog_img_box">
                   <figure>
-                    <img src={"http://localhost:8000/api" + blog.img} alt="#" />
+                    <img src={"http://164.92.165.54/api" + blog.img} alt="#" />
                     {/* <span>{blog.datandtime}</span> */}
                   </figure>
                 </div>
