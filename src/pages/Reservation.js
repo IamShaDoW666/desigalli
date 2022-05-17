@@ -23,7 +23,7 @@ const Reservation = () => {
 
     await axios({
       method: "post",
-      url: "http://164.92.165.54/api/reservation/",
+      url: "http://139.59.140.77/api/reservation/",
       data: formField
     }).then((response) => {
       console.log(formField);

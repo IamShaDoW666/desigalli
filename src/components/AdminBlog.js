@@ -15,7 +15,7 @@ const AdminBlog = () => {
     }, []);
 
     let getNotes = async () => {
-        let response = await fetch("http://164.92.165.54/api/", {
+        let response = await fetch("http://139.59.140.77/api/", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

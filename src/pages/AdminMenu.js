@@ -26,7 +26,7 @@ const AdminMenu = () => {
 
         await axios({
             method: "post",
-            url: "http://164.92.165.54/api/createmenu/",
+            url: "http://139.59.140.77/api/createmenu/",
             data: formField,
             headers: {
                 "Content-Type": "application/json",

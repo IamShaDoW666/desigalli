@@ -16,7 +16,7 @@ function Top() {
   
 
   let events = async () => {
-    let response = await fetch("http://164.92.165.54/api/eventget", {
+    let response = await fetch("http://139.59.140.77/api/eventget", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
