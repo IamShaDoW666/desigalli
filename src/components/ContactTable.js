@@ -9,7 +9,7 @@ const ContactForm = () => {
   }, []);
 
   let getNotes = async () => {
-    let response = await fetch("  http://139.59.140.77/api/contactget/", {
+    let response = await fetch("  http://desigallibcn.com/api/contactget/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

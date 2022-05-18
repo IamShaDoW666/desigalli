@@ -18,7 +18,7 @@ const Updates = () => {
 
         await axios({
             method: "post",
-            url: "http://139.59.140.77/api/eventpost/",
+            url: "http://desigallibcn.com/api/eventpost/",
             data: formField,
             headers: {
                 "Content-Type": "application/json",

@@ -4,7 +4,7 @@ const Recipe = () => {
   const [topDish, setTopDish] = useState([]);
 
   const getTopDishes = async () => {
-    let response = await fetch("http://139.59.140.77/api/topdish/", {
+    let response = await fetch("http://desigallibcn.com/api/topdish/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -37,7 +37,7 @@ const Recipe = () => {
 
                 <div class="item">
                   <div class="product_blog_img">
-                      <img src={"http://139.59.140.77/api" + topDish.img} alt="#" />
+                      <img src={"http://desigallibcn.com/api" + topDish.img} alt="#" />
                   </div>
                   <div class="product_blog_cont">
                       <h3>{topDish.dishname}</h3>

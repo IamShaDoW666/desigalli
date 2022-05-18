@@ -5,7 +5,7 @@ const Coursal = () => {
   const [images, setImages] = useState([]);
 
   let getBanner = async () => {
-    let response = await fetch("http://139.59.140.77/api/banner/", {
+    let response = await fetch("http://desigallibcn.com/api/banner/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

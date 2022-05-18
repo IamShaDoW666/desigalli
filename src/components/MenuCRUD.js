@@ -15,7 +15,7 @@ const MenuCRUD = () => {
     }, []);
 
     let getNotes = async () => {
-        let response = await fetch("http://139.59.140.77/api/menu/", {
+        let response = await fetch("http://desigallibcn.com/api/menu/", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const MenuCRUD = () => {
         }
     };
     const deleteUser = async (id) => {
-        let u = "http://139.59.140.77/api/deletemenu/" + id
+        let u = "http://desigallibcn.com/api/deletemenu/" + id
 
         await axios.delete(u)
         window.location.reload();
@@ -63,7 +63,7 @@ const MenuCRUD = () => {
                                 <tr>
                                     <th scope="row">{note.id}</th>
                                     <td class="w-25">
-                                        <img src={"http://139.59.140.77/api" + note.dishImage} class="img-fluid img-thumbnail" alt="Sheep" />
+                                        <img src={"http://desigallibcn.com/api" + note.dishImage} class="img-fluid img-thumbnail" alt="Sheep" />
                                     </td>
                                     <td>{note.dishname}</td>
                                     <td>{note.price}</td>

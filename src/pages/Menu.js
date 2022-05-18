@@ -12,7 +12,7 @@ const Menu = () => {
   }, []);
 
   let getMenu = async () => {
-    let response = await fetch("http://139.59.140.77/api/menu/", {
+    let response = await fetch("http://desigallibcn.com/api/menu/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

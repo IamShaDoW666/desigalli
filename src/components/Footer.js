@@ -20,7 +20,7 @@ const Footer = () => {
 
     await axios({
       method: "post",
-      url: "http://139.59.140.77/api/contactpost/",
+      url: "http://desigallibcn.com/api/contactpost/",
       data: formField
     }).then((response) => {
       console.log(formField);

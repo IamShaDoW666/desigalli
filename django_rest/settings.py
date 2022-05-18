@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-&y1s46me%82x8)1wq=luw97wg61!6(i^^ez3=*3cop+ljh+he2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['139.59.140.77']
+ALLOWED_HOSTS = ['desigallibcn.com']
 
 
 # Application definition
@@ -159,15 +159,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # CORS_ALLOW_ALL_ORIGINS: True
 
 CORS_ALLOWED_ORIGINS = [
-    'http://139.59.140.77'   
+    'http://desigallibcn.com'   
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'http://139.59.140.77'
+    'http://desigallibcn.com'
 ]
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    'http://139.59.140.77/login',
+    'http://desigallibcn.com/login',
 ]
 CORS_ALLOW_METHODS = [
     "DELETE",

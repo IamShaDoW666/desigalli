@@ -7,7 +7,7 @@ const Blogss = () => {
 
     const getBlogs = async () => {
         alert(process.env.APP_URL);
-        let response = await fetch("http://139.59.140.77/api/", {
+        let response = await fetch("http://desigallibcn.com/api/", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
