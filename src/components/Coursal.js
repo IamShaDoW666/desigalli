@@ -81,8 +81,8 @@ const Coursal = () => {
                             <Link class="main_bt_border" to="reservation">
                               Book a Table
                             </Link>
-                            <a href="http://order.desigalli.com" class="ml-3 main_bt_border">
-                              Book a Table
+                            <a href="http://order.desigallibcn.com" class="ml-3 main_bt_border">
+                              Order Now
                             </a>
                           </div>
                         </div>
