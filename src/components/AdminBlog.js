@@ -15,7 +15,7 @@ const AdminBlog = () => {
     }, []);
 
     let getNotes = async () => {
-        let response = await fetch("http://desigallibcn.com/api/", {
+        let response = await fetch(process.env.REACT_APP_BACKEND, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const AdminBlog = () => {
         }
     };
     const deleteUser = async (id) => {
-        let u = "http://164.92.165.54/api/delete/" + id
+        let u = process.env.REACT_APP_BACKEND + "/api/delete/" + id
       
         await axios.delete(u)
         window.location.reload();
@@ -61,7 +61,7 @@ const AdminBlog = () => {
                           <tr>
                                    <th scope="row">{note.id}</th>
                               <td class="w-25">
-                                       <img src={"http://164.92.165.54/api" + note.img} class="img-fluid img-thumbnail" alt="Sheep"/>
+                                       <img src={process.env.REACT_APP_BACKEND + "/api" + note.img} class="img-fluid img-thumbnail" alt="Sheep"/>
                               </td>
                                    <td>{note.title}</td>
                                    <td>{note.desc}</td>

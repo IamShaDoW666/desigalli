@@ -23,7 +23,7 @@ const Reservation = () => {
 
     await axios({
       method: "post",
-      url: "http://desigallibcn.com/api/reservation/",
+      url: process.env.REACT_APP_BACKEND + "/api/reservation/",
       data: formField
     }).then((response) => {
       console.log(formField);

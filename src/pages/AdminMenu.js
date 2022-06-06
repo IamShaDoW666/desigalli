@@ -26,7 +26,7 @@ const AdminMenu = () => {
 
         await axios({
             method: "post",
-            url: "http://desigallibcn.com/api/createmenu/",
+            url: process.env.REACT_APP_BACKEND + "/api/createmenu/",
             data: formField,
             headers: {
                 "Content-Type": "application/json",

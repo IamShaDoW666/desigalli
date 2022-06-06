@@ -9,7 +9,7 @@ const ContactForm = () => {
   }, []);
 
   let getNotes = async () => {
-    let response = await fetch("  http://desigallibcn.com/api/contactget/", {
+    let response = await fetch(process.env.REACT_APP_BACKEND + "/api/contactget/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -16,7 +16,7 @@ function Top() {
   
 
   let events = async () => {
-    let response = await fetch("http://desigallibcn.com/api/eventget", {
+    let response = await fetch(process.env.REACT_APP_BACKEND + "/api/eventget", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

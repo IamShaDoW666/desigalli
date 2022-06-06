@@ -11,7 +11,7 @@ const ReservationTable = () => {
   }, []);
 
   let getNotes = async () => {
-    let response = await fetch("http://desigallibcn.com/api/reservationGet/", {
+    let response = await fetch(process.env.REACT_APP_BACKEND + "/api/reservationGet/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

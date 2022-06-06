@@ -8,17 +8,18 @@ import Footer from "../components/Footer";
 import Top from "../components/Top"
 
 const Desi = () => {
-  
+
   return (
     <div>
-      <Top/>
+      
+      <Top />
       {/* <Navbar /> */}
       <Coursal />
       {/* <Recipe /> */}
       <About />
-    
 
-     
+
+
       <Footer />
     </div>
   );
