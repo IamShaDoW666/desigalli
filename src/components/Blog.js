@@ -5,14 +5,13 @@ const Blog = () => {
   const [blogs, setBlogs] = useState([]);
 
   const getBlogs = async () => {
-    let response = await fetch(process.env.REACT_APP_BACKEND, {
+    let response = await fetch(process.env.REACT_APP_BACKEND + "/api/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
       }
     });
     let data = await response.json();
-    console.log(data);
     setBlogs(data);
   };
 

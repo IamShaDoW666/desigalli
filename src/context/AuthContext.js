@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   let updateToken = async () => {
-    let response = await fetch(process.env.REACT_APP_BACKEND +"/token/refresh/", {
+    let response = await fetch(process.env.REACT_APP_BACKEND + "/api/token/refresh/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

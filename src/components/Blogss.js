@@ -7,7 +7,7 @@ const Blogss = () => {
 
     const getBlogs = async () => {
         alert(process.env.APP_URL);
-        let response = await fetch(process.env.REACT_APP_BACKEND, {
+        let response = await fetch(process.env.REACT_APP_BACKEND + "/api/", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
