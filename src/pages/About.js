@@ -8,7 +8,7 @@ const About = () => {
   }, []);
 
   let getNotes = async () => {
-    let response = await fetch("http://164.92.165.54/api/", {
+    let response = await fetch(process.env.REACT_APP_BACKEND, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

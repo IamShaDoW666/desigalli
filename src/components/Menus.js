@@ -9,7 +9,7 @@ const Menus = () => {
     }, []);
 
     let getMenu = async () => {
-        let response = await fetch("http://164.92.165.54/api/menu/", {
+        let response = await fetch(process.env.REACT_APP_BACKEND + "/api/menu/", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -67,7 +67,7 @@ const Menus = () => {
                     <div class="fh5co-item">
                         <div class="imgborder">
                       
-                            <img src={"http://164.92.165.54/api" + menu.dishImage} class="img-responsive" alt="menu" />
+                            <img src={process.env.REACT_APP_BACKEND + "/api" + menu.dishImage} class="img-responsive" alt="menu" />
                         </div>
                   <h3>{menu.dishname}</h3>
                   <span class="fh5co-price">{menu.price}<sup>.50</sup></span>

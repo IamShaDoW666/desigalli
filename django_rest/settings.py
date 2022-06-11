@@ -14,6 +14,12 @@ from pathlib import Path
 from datetime import timedelta
 import os
 
+import environ
+
+# environment variables
+env = environ.Env()
+environ.Env.read_env()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +32,7 @@ SECRET_KEY = 'django-insecure-&y1s46me%82x8)1wq=luw97wg61!6(i^^ez3=*3cop+ljh+he2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['164.92.165.54']
+ALLOWED_HOSTS = [env('APP_SERVER'), 'localhost']
 
 
 # Application definition
@@ -153,12 +159,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # CORS_ALLOW_ALL_ORIGINS: True
 
 CORS_ALLOWED_ORIGINS = [
-    'http://164.92.165.54'
-   
-    
+    env('APP_URL')   
 ]
+
+CORS_ORIGIN_WHITELIST = [
+    env('APP_URL')
+]
+
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^http://164.92.165.54/login/",
+    env('APP_URL') + '/login'
 ]
 CORS_ALLOW_METHODS = [
     "DELETE",

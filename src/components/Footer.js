@@ -20,7 +20,7 @@ const Footer = () => {
 
     await axios({
       method: "post",
-      url: "http://164.92.165.54/api/contactpost/",
+      url: process.env.REACT_APP_BACKEND + "contactpost/",
       data: formField
     }).then((response) => {
       console.log(formField);
@@ -115,7 +115,7 @@ const Footer = () => {
               <div class="footer_logo">
                 <a href="index.html">
                   <img
-                    src="images/dgl.png"
+                    src="images/dlg.png"
                     alt="logo"
                     width="150px"
                     height="100px"
@@ -157,7 +157,7 @@ const Footer = () => {
                     type="text"
                     name="Your email"
                   />
-                  <button class="submit">Get Offers & Updates</button>
+                  <button class="submit">Get Updates</button>
                 </form>
               </div>
             </div>

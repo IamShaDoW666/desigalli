@@ -18,7 +18,7 @@ const Updates = () => {
 
         await axios({
             method: "post",
-            url: "http://164.92.165.54/api/eventpost/",
+            url: process.env.REACT_APP_BACKEND + "/api/eventpost/",
             data: formField,
             headers: {
                 "Content-Type": "application/json",

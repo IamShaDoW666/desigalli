@@ -6,7 +6,8 @@ const Blogss = () => {
     const [blogs, setBlogs] = useState([]);
 
     const getBlogs = async () => {
-        let response = await fetch("http://164.92.165.54/api/", {
+        alert(process.env.APP_URL);
+        let response = await fetch(process.env.REACT_APP_BACKEND, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -58,7 +59,7 @@ const Blogss = () => {
                             <div class="blog_box row">
                                     <div class="blog_img_box col-md-5">
                                         <figure>
-                                            <img src={"http://164.92.165.54/api" + blog.img} alt="#" />
+                                            <img src={process.env.REACT_APP_BACKEND + "/api" + blog.img} alt="#" />
                                            
                                         </figure>
                                     

@@ -18,7 +18,7 @@ const ReservationForm = () => {
 
     await axios({
       method: "post",
-      url: "http://164.92.165.54/api/creatBlog/",
+      url: process.env.REACT_APP_BACKEND + "/api/creatBlog/",
       data: formField
     }).then((response) => {
       console.log(response.data);

@@ -9,7 +9,7 @@ const ContactForm = () => {
   }, []);
 
   let getNotes = async () => {
-    let response = await fetch("  http://164.92.165.54/api/contactget/", {
+    let response = await fetch(process.env.REACT_APP_BACKEND + "/api/contactget/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

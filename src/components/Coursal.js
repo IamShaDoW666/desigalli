@@ -5,7 +5,7 @@ const Coursal = () => {
   const [images, setImages] = useState([]);
 
   let getBanner = async () => {
-    let response = await fetch("http://164.92.165.54/api/banner/", {
+    let response = await fetch(process.env.REACT_APP_BACKEND + "/api/banner/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -81,6 +81,9 @@ const Coursal = () => {
                             <Link class="main_bt_border" to="reservation">
                               Book a Table
                             </Link>
+                            <a href="https://order.desigallibcn.com" class="ml-3 main_bt_border">
+                              Order Now
+                            </a>
                           </div>
                         </div>
                         <div class="col-md-7 full text_align_center">
@@ -88,7 +91,7 @@ const Coursal = () => {
                             <img
                               class="img-responsive rotate linear infinite"
                               // src={"./images/bhel.png"}
-                              src={"http://164.92.165.54/api" + image.img}
+                              src={process.env.REACT_APP_BACKEND +"/api" + image.img}
                               alt="#"
                             />
                           </div>
