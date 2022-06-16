@@ -23,7 +23,7 @@ function Top() {
       }
     });
     let data = await response.json();
-    console.log(data);
+    
     setEvent(data);
   };
 
@@ -68,14 +68,18 @@ function Top() {
               <div class="full">
                 <div class="right_header_info">
                   <ul>
+                   
                     <li class="dinone">
-                      Contact Us :
+                      Contact US
+                      
+                      </li>
+                    <li class="dinone">
                       <img
                         style={{ marginRight: 15, marginLeft: 15 }}
                         src={"images/phone_icon.png"}
                         alt="#"
                       />
-                      <a href="tel:8319400650">+47 333 78 901</a>
+                      <a href="tel:+34 933 49 93 79">+34 933 49 93 79</a>
                     </li>
                     <li class="dinone">
                       <img
@@ -84,7 +88,7 @@ function Top() {
                         alt="#"
                       />
                       <a href="mailto:desigallibcn@gmail.com?subject = Feedback&body = Message">
-                        desigalli@gmail.com
+                        MAIL
                       </a>
                     </li>
                     <li class="dinone">
@@ -112,9 +116,9 @@ function Top() {
 
                       {/* <a href="" class="button active" data-toggle="modal" data-target="#myModal">Events <i class="fa-solid fa-bell"></i></a> */}
 
-                      <Link class="button" to="reservation">
-                        Reservation <i class="fa-solid fa-mug-hot"></i>
-                      </Link>
+                      <a class="button" href="https://order.desigallibcn.com/">
+                        ORDER NOW <i class="fa-solid fa-utensils"></i>
+                      </a>
                     </li>
 
                     <li>

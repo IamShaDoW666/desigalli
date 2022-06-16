@@ -29,7 +29,7 @@ const Menus = () => {
             <div class="container">
                 <div class="menu_custom  text-center">
                     
-                    <img class= "col-md-4" src="../images/dgl.png"  />
+                    <img class= "col-md-4" src="../images/dlg.png"  />
               
                 </div>
             </div>
@@ -42,11 +42,11 @@ const Menus = () => {
                     <h2>Download full menu</h2>
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="../pdfs/menu.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg btn-outline-dark"><h1>DRINKS <i class="fa-solid fa-wine-glass-empty"></i></h1></button>
+                            <a href="../pdfs/drinks.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg btn-outline-dark"><h1>DRINKS <i class="fa-solid fa-wine-glass-empty"></i></h1></button>
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <a href="../pdfs/menu.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg btn-outline-dark"><h1>FOOD <i class="fa-solid fa-utensils"></i></h1></button>
+                            <a href="../pdfs/food.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg btn-outline-dark"><h1>FOOD <i class="fa-solid fa-utensils"></i></h1></button>
                             </a>
                         </div>
 
@@ -54,10 +54,8 @@ const Menus = () => {
                     </div>
           <div class="row">
             <div class="col-md-12 fh5co-heading ">
-              <h2>Today's Menu</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil,
-                        nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque,
-                        nesciunt similique commodi omnis. Ad magni perspiciatis, voluptatum repellat.</p>
+              <h2>Chef's Pick</h2>
+              
 
                         </div>
                         
@@ -70,7 +68,7 @@ const Menus = () => {
                             <img src={process.env.REACT_APP_BACKEND + "/api" + menu.dishImage} class="img-responsive" alt="menu" />
                         </div>
                   <h3>{menu.dishname}</h3>
-                  <span class="fh5co-price">{menu.price}<sup>.50</sup></span>
+                        <span class="fh5co-price">{menu.price}<sup>€</sup></span>
 		
 					</div>
               </div>
