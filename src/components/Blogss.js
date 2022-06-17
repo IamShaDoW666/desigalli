@@ -59,7 +59,7 @@ const Blogss = () => {
                             <div class="blog_box row">
                                     <div class="blog_img_box col-md-5">
                                         <figure>
-                                            <img src={process.env.REACT_APP_BACKEND + "/api" + blog.img} alt="#" />
+                                            <img src={process.env.REACT_APP_BACKEND + blog.img} alt="#" />
                                            
                                         </figure>
                                     

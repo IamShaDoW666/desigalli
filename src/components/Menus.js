@@ -65,7 +65,7 @@ const Menus = () => {
                     <div class="fh5co-item">
                         <div class="imgborder">
                       
-                            <img src={process.env.REACT_APP_BACKEND + "/api" + menu.dishImage} class="img-responsive" alt="menu" />
+                            <img src={process.env.REACT_APP_BACKEND + menu.dishImage} class="img-responsive" alt="menu" />
                         </div>
                   <h3>{menu.dishname}</h3>
                         <span class="fh5co-price">{menu.price}<sup>€</sup></span>

@@ -89,7 +89,7 @@ const Coursal = () => {
                             <img
                               class="img-responsive rotate linear infinite"
                               // src={"./images/bhel.png"}
-                              src={process.env.REACT_APP_BACKEND +"/api" + image.img}
+                              src={process.env.REACT_APP_BACKEND + image.img}
                               alt="#"
                             />
                           </div>

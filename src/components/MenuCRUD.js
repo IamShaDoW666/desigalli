@@ -63,7 +63,7 @@ const MenuCRUD = () => {
                                 <tr>
                                     <th scope="row">{note.id}</th>
                                     <td class="w-25">
-                                        <img src={process.env.REACT_APP_BACKEND + "/api/api" + note.dishImage} class="img-fluid img-thumbnail" alt="Sheep" />
+                                        <img src={process.env.REACT_APP_BACKEND + note.dishImage} class="img-fluid img-thumbnail" alt="Sheep" />
                                     </td>
                                     <td>{note.dishname}</td>
                                     <td>{note.price}</td>

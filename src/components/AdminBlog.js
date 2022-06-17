@@ -61,7 +61,7 @@ const AdminBlog = () => {
                           <tr>
                                    <th scope="row">{note.id}</th>
                               <td class="w-25">
-                                       <img src={process.env.REACT_APP_BACKEND + "/api" + note.img} class="img-fluid img-thumbnail" alt="Sheep"/>
+                                       <img src={process.env.REACT_APP_BACKEND + note.img} class="img-fluid img-thumbnail" alt="Sheep"/>
                               </td>
                                    <td>{note.title}</td>
                                    <td>{note.desc}</td>
