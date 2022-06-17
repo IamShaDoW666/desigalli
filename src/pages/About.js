@@ -8,7 +8,7 @@ const About = () => {
   }, []);
 
   let getNotes = async () => {
-    let response = await fetch(process.env.REACT_APP_BACKEND, {
+    let response = await fetch(process.env.REACT_APP_BACKEND + '/api/', {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

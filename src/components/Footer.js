@@ -20,7 +20,7 @@ const Footer = () => {
 
     await axios({
       method: "post",
-      url: process.env.REACT_APP_BACKEND + "contactpost/",
+      url: process.env.REACT_APP_BACKEND + "/api/contactpost/",
       data: formField
     }).then((response) => {
       console.log(formField);
