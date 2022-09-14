@@ -209,7 +209,7 @@ class Reservation(APIView):
             email = EmailMessage(
                 
                 'DESI GALLI BCN',
-                'Dear {} thank you for Booking a Table at Desi galli \n\n\n\n DETAILS \n \nTable for {} on {} at {} \n\n NAME: {} '.format(n,c,y,d,n),
+                'Estimado {},\n Gracias por reservar una mesa en Desi Galli. \n\n\n Detalles: \n \n Mesa para {} el {} a las {} \n\n Nombre: {} '.format(n,c,y,d,n),
                 'desigallibcn@gmail.com',
                 [x],
                 
@@ -219,20 +219,21 @@ class Reservation(APIView):
                 
                 
             )
-            # email.attach_file('./images/bg.png')
+            
+            
+           
             email.send()
-            # send_mail(
+            send_mail(
         
                 
-            #     'Table Booking confirmation ', #subject
-            #     'hello {} thank you for Booking a Table at Desi galli '.format(n), #message
-            #     'bharatautosolution81@gmail.com', #from email
-            #     [x], #To email
-            #     
-            #     message.attach('design.png', img_data, 'image/png')
+                'New Booking at Desi galli', #subject
+                'Respected Admin, there is a new table reservation at desi galli \n\n from :{} \n ON: {} \n At: {}'.format(n,y,d), #message
+                'desigallibcn@gmail.com', #from email
+                ['dharamdasanir@gmail.com','priyanshuparashar223@gmail.com'], #To email
+                fail_silently=False
                 
-            # )
-            print("Working")
+            )
+         
             return Response(serializer.data, status=status.HTTP_200_OK)
         else:
             print('error')
