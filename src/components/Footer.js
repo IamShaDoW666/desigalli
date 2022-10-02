@@ -127,7 +127,7 @@ const Footer = () => {
               <ul class="lik">
                 <li class="active">
                   {" "}
-                  <Link to="/">Home</Link>
+                  <Link to="/">Desi Galli</Link>
                 </li>
                 <li>
                   {" "}
