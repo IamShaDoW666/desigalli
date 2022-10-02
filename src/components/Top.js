@@ -70,7 +70,7 @@ function Top() {
                   <ul>
                    
                     <li class="dinone">
-                      Contact US
+                      Contact
                       
                       </li>
                     <li class="dinone">
@@ -79,7 +79,7 @@ function Top() {
                         src={"images/phone_icon.png"}
                         alt="#"
                       />
-                      <a href="tel:+34 933 49 93 79">+34 933 49 93 79</a>
+                      <a href="tel:+34 933 49 93 79">+34620562103</a>
                     </li>
                     <li class="dinone">
                       <img
@@ -88,7 +88,7 @@ function Top() {
                         alt="#"
                       />
                       <a href="mailto:desigallibcn@gmail.com?subject = Feedback&body = Message">
-                        MAIL
+                        EMAIL
                       </a>
                     </li>
                     <li class="dinone">
@@ -106,18 +106,18 @@ function Top() {
                     </li>
 
                     <li class="button_user">
-                      <Link
+                      {/* <Link
                         class="button"
                         data-toggle="modal"
                         data-target="#myModal"
                       >
                         Events <i class="fa-solid fa-bell"></i>
-                      </Link>
+                      </Link> */}
 
                       {/* <a href="" class="button active" data-toggle="modal" data-target="#myModal">Events <i class="fa-solid fa-bell"></i></a> */}
 
                       <a class="button" href="https://order.desigallibcn.com/">
-                        ORDER NOW <i class="fa-solid fa-utensils"></i>
+                        ASK FOOD <i class="fa-solid fa-utensils"></i>
                       </a>
                     </li>
 

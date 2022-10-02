@@ -12,7 +12,6 @@ const Blog = () => {
       }
     });
     let data = await response.json();
-   
     setBlogs(data);
   };
 

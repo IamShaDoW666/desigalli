@@ -181,8 +181,8 @@ CORS_ALLOW_METHODS = [
 EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST ='smtp.gmail.com'
 EMAIL_PORT =587
-EMAIL_HOST_USER ='desigallibcn@gmail.com'
-EMAIL_HOST_PASSWORD ='ftbzathfotvjnzue'
+EMAIL_HOST_USER ='dgbcnreservas@gmail.com'
+EMAIL_HOST_PASSWORD ='kcbhwilonhlffiwn'
 EMAIL_USE_TLS = True
 
 

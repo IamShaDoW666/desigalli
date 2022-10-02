@@ -210,11 +210,11 @@ class Reservation(APIView):
                 
                 'DESI GALLI BCN',
                 'Estimado {},\n Gracias por reservar una mesa en Desi Galli. \n\n\n Detalles: \n \n Mesa para {} el {} a las {} \n\n Nombre: {} '.format(n,c,y,d,n),
-                'desigallibcn@gmail.com',
+                'dgbcnreservas@gmail.com',
                 [x],
                 
-                ['priyanshuparashar223@gmail.com'],
-                reply_to=['samarth.bhole2001@gmail.com'],
+            
+                
                 headers={'Message-ID': 'foo'},
                 
                 
@@ -227,9 +227,9 @@ class Reservation(APIView):
         
                 
                 'New Booking at Desi galli', #subject
-                'Respected Admin, there is a new table reservation at desi galli \n\n from :{} \n ON: {} \n At: {}'.format(n,y,d), #message
-                'desigallibcn@gmail.com', #from email
-                ['dharamdasanir@gmail.com','priyanshuparashar223@gmail.com'], #To email
+                'Respected Admin, there is a new table reservation at desi galli \n\n from :{} \n ON: {} \n At: {} \n No of guest:{} '.format(n,y,d,c), #message
+                'dgbcnreservas@gmail.com', #from email
+                ['dg.reservas@gmail.com'], #To email
                 fail_silently=False
                 
             )
@@ -282,17 +282,17 @@ class ContactPost(APIView):
             send_mail(
         
                 
-                'BHARATAUTO SOLUTIONS ORDER confirmed', #subject
-                'hello thank you for purchasing order id is '+x, #message
-                'bharatautosolution81@gmail.com', #from email
+                'DESI GALLI', #subject
+                'thank you for your response we will get back to you shortly', #message
+                'dgbcnreservas@gmail.com', #from email
                 [x], #To email
                 fail_silently=False
                 
             )
-            print("Working")
+           
             return Response(serializer.data, status=status.HTTP_200_OK)
         else:
-            print('error')
+           
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 @api_view(['GET'])

@@ -52,7 +52,7 @@ class TableR(models.Model):
  
    
     name=models.CharField(max_length=200, null=False)
-    count=models.IntegerField(null= True )
+    count=models.CharField(null= True, max_length=20 )
     phone=models.IntegerField(null=False)
     email=models.EmailField(null=False)
     datef=models.DateField(auto_now=False, null=True)

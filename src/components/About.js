@@ -15,7 +15,8 @@ const About = () => {
         <div class="center">
           <a href="https://www.google.com/maps/place/Desi+Galli/@41.3836188,2.1570717,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a3f44cb0782f:0xe56629d8e6282851!8m2!3d41.3836188!4d2.1592604">
                              
-            <button type="button" class="btn btn-light btn-lg btn-lg btn-outline-light"><h2>LOCATE US <i class="fa-solid fa-map-location-dot"></i></h2></button>
+            <button type="button" class="btn btn-light btn-lg btn-lg btn-outline-light"><h2>
+              Location <i class="fa-solid fa-map-location-dot"></i></h2></button>
           </a>
         </div>
        
@@ -62,7 +63,7 @@ const About = () => {
             <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
               <div class="about_img">
                 <figure>
-                  <img src="images/about_bg.jpg" alt="#" />
+                  <img src="images/Vada.jpg" alt="#" />
                 </figure>
               </div>
             </div>

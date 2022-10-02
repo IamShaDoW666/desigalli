@@ -40,15 +40,28 @@ const Menus = () => {
                
                 <div class="container fh5co-heading">
                     <h2>Download full menu</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a href="../pdfs/drinks.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg btn-outline-dark"><h1>DRINKS <i class="fa-solid fa-wine-glass-empty"></i></h1></button>
+                    <div class="row border border-white">
+                        <div class="fh5co-heading  ">
+                            <a href="../pdfs/drinks.pdf" target="_blank"><button type="button" class=" btn btn-dark btn-lg btn-outline-dark"><h1>Drinks <i class="fa-solid fa-wine-glass-empty"></i></h1></button>
                             </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="../pdfs/food.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg btn-outline-dark"><h1>FOOD <i class="fa-solid fa-utensils"></i></h1></button>
+                            <br>
+                            </br>
+                            <br>
+                            </br>
+                           
+                                <a href="../pdfs/food.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg btn-outline-dark"><h1>Food<i class="fa-solid fa-utensils"></i></h1></button>
                             </a>
+                            <br>
+                            </br>
+                            <br>
+                            </br>
+
+                            <a href="../pdfs/tasting.pdf" target="_blank"><button type="button" class="btn btn-dark btn-lg btn-outline-dark"><h1>
+                                Tasting menu<i class="fa-solid fa-utensils"></i></h1></button>
+                            </a>
+                            
                         </div>
+                       
 
 
                     </div>
