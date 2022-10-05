@@ -37,7 +37,7 @@ const Recipe = () => {
 
                 <div class="item">
                   <div class="product_blog_img">
-                      <img src={process.env.REACT_APP_BACKEND + "/api" + topDish.img} alt="#" />
+                      <img src={process.env.REACT_APP_BACKEND + topDish.img} alt="#" />
                   </div>
                   <div class="product_blog_cont">
                       <h3>{topDish.dishname}</h3>

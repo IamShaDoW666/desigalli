@@ -57,7 +57,7 @@ const Blog = () => {
               <div class="blog_box">
                 <div class="blog_img_box">
                   <figure>
-                    <img src={process.env.REACT_APP_BACKEND + "/api" + blog.img} alt="#" />
+                    <img src={process.env.REACT_APP_BACKEND + blog.img} alt="#" />
                     {/* <span>{blog.datandtime}</span> */}
                   </figure>
                 </div>
