@@ -63,7 +63,7 @@ const About = () => {
             <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
               <div class="about_img">
                 <figure>
-                  <img src="images/Vada.jpg" alt="#" />
+                  <img src="images/Vada.JPG" alt="#" />
                 </figure>
               </div>
             </div>
