@@ -52,12 +52,12 @@ const About = () => {
                 <p>
                   India and Indian street food is a journey of culture and colours along with a lot of unforgetable experiences.
                   With Desi Galli, we would like to walk you through the streets of India bringing you explosion of flavours and nostalgia  for some, while allowing others to create new memories.
-                  We are not just another Indian restaurant, we are one that reaches out to the hearts of all….…..{" "}
+                  We are not just another Indian restaurant, we are one that reaches out to the hearts of all.{" "}
                 </p>
-                <a href="#">
+                {/* <a href="#">
                   Read More{" "}
                   <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
+                </a> */}
               </div>
             </div>
             <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">

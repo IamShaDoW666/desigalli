@@ -15,10 +15,7 @@ const Gallery = () => {
           
             <Top />
 
-            <div style={{ marginTop: "100px", padding:"30px" }}>
-                <iframe src="https://www.youtube.com/embed/8KKwqW3v9eQ?autoplay=1" title="DESI GALLI" frameborder="1" width="100%" height="500px" allow="autoplay" allowfullscreen></iframe>
-
-            </div>
+          
 
             
             <div class="container">
