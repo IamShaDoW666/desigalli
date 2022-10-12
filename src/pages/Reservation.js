@@ -46,7 +46,7 @@ const Reservation = () => {
           <div class="">
             <div class=" fh5co-heading animate-box">
               <h2>Reservation</h2>
-              <h4 class="text-light">NOTE:Restaurant Timing- Tuesday-Thursday 13:00-16:00 and 20:00-23:00 | Friday-Saturday :20:00-24:00</h4>
+              <h4 class="text-light">NOTE:Restaurant Timing- Tuesday-Thursday 13:00-16:00 and 20:00-23:30 | Friday-Saturday :20:00-24:00</h4>
              
             </div>
             {/* <div class="text-center">
