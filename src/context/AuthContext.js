@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
       
       
     } else {
-      alert("Something went wrong!");
+      alert("Incorrect credentials!");
     }
   };
 

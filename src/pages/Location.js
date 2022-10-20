@@ -35,8 +35,8 @@ const Location = () => {
                 <div class="row">
                     <div class="col-md-3">
                        
-                            <div class="white"> It's not
-                                TOO DIFFICULT TO LOOK OUT FOR US! <br></br>
+                            <div class="white"> 
+                               Desi Galli <br></br>
 
                                 <br>
                                 </br>
@@ -44,13 +44,13 @@ const Location = () => {
                                 <br>
                                 </br>
                                 C. de Villarroel, 60, local b, 08011 Barcelona
-                                C. de Villarroel, 60, local b, 08011 Barcelona
+                               
                             <br>
                             </br>
                             <br>
                             </br>
                                 <h1 class="white">
-                                    BOOk a Table
+                                    BOOK A TABLE
 
                                 </h1>
                                 <br>

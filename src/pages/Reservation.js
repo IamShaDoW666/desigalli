@@ -11,7 +11,7 @@ const Reservation = () => {
   const [email, setEmail] = useState();
   const [datef, setDatef] = useState();
   const [time, setTime] = useState();
-
+  const [thank, setThank] = useState(false);
   const addNewReservations = async () => {
     let formField = new FormData();
     formField.append("name", name);
@@ -20,15 +20,22 @@ const Reservation = () => {
     formField.append("email", email);
     formField.append("datef", datef);
     formField.append("time", time);
+    alert("Gracias por reservar en Desi Galli");
 
     await axios({
+      
       method: "post",
       url: process.env.REACT_APP_BACKEND + "/api/reservation/",
       data: formField
     }).then((response) => {
-      console.log(formField);
+      
+     
+      
+     
     });
+    
   };
+ 
 
   return (
     <div class="ress">
@@ -39,8 +46,12 @@ const Reservation = () => {
           <div class="">
             <div class=" fh5co-heading animate-box">
               <h2>Reservation</h2>
+              <h4 class="text-light">NOTE:Restaurant Timing- Tuesday-Thursday 13:00-16:00 and 20:00-23:30 | Friday-Saturday :20:00-24:00</h4>
              
             </div>
+            {/* <div class="text-center">
+              <h4>NOTE:Restaurant Timing- Tuesday-Thursday 13:00-16:00 and 20:00-23:00 | Friday-Saturday :20:00-24:00</h4>
+            </div> */}
 
             <div class="container">
               
@@ -92,7 +103,7 @@ const Reservation = () => {
 
                 <div class="row form-group">
                   <div class="col-md-6">
-                    <label for="many">How Many People</label>
+                    <label for="many">Number of people</label>
                     <select
                       name="many"
                       id="many"
@@ -105,6 +116,9 @@ const Reservation = () => {
                       <option value="2">2</option>
                       <option value="3">3</option>
                       <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="6+">6+</option>
                     </select>
                   </div>
                   <div class=" form-group">
@@ -122,7 +136,7 @@ const Reservation = () => {
                   </div>
                   <div class=" form-group">
                     <div class="col-md-12">
-                      <label for="taskdatetime">Time</label>
+                      <label for="taskdatetime">Hour</label>
                       <input
                         class="form-control"
                         type="time"

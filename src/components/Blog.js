@@ -40,7 +40,7 @@ const Blog = () => {
 
             </i>
             <h2>Our Blogs</h2>
-            <p>when looking at its layout. The point of using Lorem</p>
+          <p>Let your imagination flow through the flavors of our street food</p>
           </div>
        
       </div>

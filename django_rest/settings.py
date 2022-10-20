@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-&y1s46me%82x8)1wq=luw97wg61!6(i^^ez3=*3cop+ljh+he2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [env('APP_SERVER'), 'localhost']
+ALLOWED_HOSTS = [env('APP_SERVER'), 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -181,8 +181,8 @@ CORS_ALLOW_METHODS = [
 EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST ='smtp.gmail.com'
 EMAIL_PORT =587
-EMAIL_HOST_USER ='desigallibcn@gmail.com'
-EMAIL_HOST_PASSWORD ='ftbzathfotvjnzue'
+EMAIL_HOST_USER ='dgbcnreservas@gmail.com'
+EMAIL_HOST_PASSWORD ='kcbhwilonhlffiwn'
 EMAIL_USE_TLS = True
 
 

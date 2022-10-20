@@ -20,6 +20,7 @@ import AdminBlogPage from "./pages/AdminBlogPage";
 import Location  from "./pages/Location";
 import AdminContact from "./pages/AdminContact";
 import AdminMenu from "./pages/AdminMenu";
+import certi from "./pages/certi";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
         <Route component={Menu} path="/menu" />
         <Route component={Reservation} path="/reservation" />
         <Route component={Gallery} path="/gallery" />
-        <Route component={Location} path="/locate"/>
+        <Route component={Location} path="/locate" />
+        <Route component={certi} path="/certificate" />
         {/* <Navbar /> */}
         <AuthProvider>
           {/* <Header /> */}

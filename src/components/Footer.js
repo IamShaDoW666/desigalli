@@ -131,7 +131,7 @@ const Footer = () => {
                 </li>
                 <li>
                   {" "}
-                  <Link to="/about">About</Link>
+                  <a href="https://order.desigallibcn.com/">Order</a>
                 </li>
                 <li>
                   {" "}
@@ -165,7 +165,7 @@ const Footer = () => {
         </div>
         <div class="copyright">
           <div class="container">
-            <p>© Desi Galli 2022 All Rights Reserved. Design by</p>
+            <p>© Desi Galli 2022 All Rights Reserved.</p>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ const Coursal = () => {
       }
     });
     let data = await response.json();
-    console.log(data);
+    
     setImages(data);
   };
 
@@ -81,9 +81,7 @@ const Coursal = () => {
                             <Link class="main_bt_border" to="reservation">
                               Book a Table
                             </Link>
-                            <a href="https://order.desigallibcn.com" class="ml-3 main_bt_border">
-                              Order Now
-                            </a>
+                           
                           </div>
                         </div>
                         <div class="col-md-7 full text_align_center">
